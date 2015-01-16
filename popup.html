@@ -1,0 +1,30 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+        width: 150px;
+      }
+      label{
+        font-size: 12px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <label for="incidentId">Incident Number</label>
+    <input id="incidentId" type="text" size = "8">
+
+    <a id="findIncident" href="#" target="_newtab">Go</a>
+    <script src="incident.js"></script>
+  </body>
+</html>
+
